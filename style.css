@@ -1,6 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: rgb(19, 19, 19);
 }
 canvas {
   display: block;
@@ -23,6 +24,7 @@ canvas {
   line-height: 82%;
   margin-top: 1vh;
   margin-bottom: 1.5vh;
+  color: white;
 }
 
 #content{

@@ -9,7 +9,7 @@ let started = false;
 
 // --- background audio ---
 let bg = null;        // p5.MediaElement created by createAudio
-let bgMuted = false;
+let bgMuted = true;
 let bgVolume = 0.6;   // default music volume (adjust as you like)
 
 function currentEntry() { return SEQUENCE[idx]; }
@@ -72,16 +72,6 @@ function draw() {
     const frame = get(0, 0, width, height); // grab full canvas
     VideoEffects.apply(frame, entry.effect, entry.params || {});
     image(frame, 0, 0, width, height);      // draw processed frame back
-  }
-}
-
-function mousePressed() {
-  // Click can still start or resume if desired, but not required anymore.
-  if (!started) {
-    beginPlaybackPipeline();
-  } else if (current) {
-    if (current.elt.paused) current.play();
-    if (bg && bg.elt && bg.elt.paused && !bgMuted) bg.play();
   }
 }
 
