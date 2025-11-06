@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+#cont{
+  display: flex;
+  flex-direction: column;
+  width:80vh;
+  margin-left: 30vh;
+}
+
+#info{
+  width: 100%;
+  font-size: 7.5vh;
+  text-align: left;
+  letter-spacing: 1.5vh;
+  line-height: 85%;
+  margin-bottom: 1.5vh;
+}
+
+#c{
+  width: 80vh;
+  height: 80vh;
+  margin: auto;
+}
+
+#tag{
+  font-family: sans-serif;
+  position: absolute;
+  left: 66.5vw; 
+  bottom: 2vh;
+  color: rgb(148, 147, 147);
+}
