@@ -9,29 +9,35 @@ canvas {
 #cont{
   display: flex;
   flex-direction: column;
-  width:80vh;
-  margin-left: 30vh;
+  width:80vw;
+  height: 100vh;
+  margin-left: 25vh;
 }
 
 #info{
-  width: 100%;
+  width: 80%;
+  height: 12vh;
   font-size: 7.5vh;
   text-align: left;
   letter-spacing: 1.5vh;
-  line-height: 85%;
+  line-height: 82%;
+  margin-top: 1vh;
   margin-bottom: 1.5vh;
+}
+
+#content{
+  display: flex;
+  flex-direction: row;
+  gap: 7vh;
 }
 
 #c{
   width: 80vh;
   height: 80vh;
-  margin: auto;
 }
 
 #tag{
+  align-self:flex-end;
   font-family: sans-serif;
-  position: absolute;
-  left: 66.5vw; 
-  bottom: 2vh;
   color: rgb(148, 147, 147);
 }
